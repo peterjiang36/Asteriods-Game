@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://benjwceoflugg"]
+[gd_scene load_steps=4 format=3 uid="uid://benjwceoflugg"]
 
 [ext_resource type="Script" path="res://Scripts/game.gd" id="1_qibsp"]
 [ext_resource type="PackedScene" uid="uid://brliatwoxijpb" path="res://Scenes/player.tscn" id="2_u55cg"]
+[ext_resource type="PackedScene" uid="uid://dab77yc5xfdox" path="res://Scenes/asteriod.tscn" id="3_3tx1x"]
 
 [node name="Game" type="Node2D"]
 position = Vector2(-2, 0)
@@ -11,3 +12,6 @@ script = ExtResource("1_qibsp")
 position = Vector2(640, 360)
 
 [node name="Lasers" type="Node" parent="."]
+
+[node name="Asteriod" parent="." instance=ExtResource("3_3tx1x")]
+position = Vector2(404, 395)

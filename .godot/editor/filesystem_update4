@@ -9,3 +9,4 @@ res://Scenes/player.tscn
 res://Scripts/game.gd
 res://Scenes/game.tscn
 res://Scripts/asteriod.gd
+res://Scenes/asteriod.tscn

@@ -1,3 +1,16 @@
-[gd_scene format=3 uid="uid://dab77yc5xfdox"]
+[gd_scene load_steps=4 format=3 uid="uid://dab77yc5xfdox"]
+
+[ext_resource type="Script" path="res://Scripts/asteriod.gd" id="1_hu6it"]
+[ext_resource type="Texture2D" uid="uid://bupymi5i6k6q1" path="res://ASSET/PNG/Meteors/meteorGrey_big4.png" id="2_p1sq0"]
+[ext_resource type="Shape2D" uid="uid://dbnhmvg7gvfk6" path="res://Resources/asteriod_cshape_large.tres" id="3_6uadp"]
 
 [node name="Asteriod" type="Area2D"]
+script = ExtResource("1_hu6it")
+size = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_p1sq0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = ExtResource("3_6uadp")
