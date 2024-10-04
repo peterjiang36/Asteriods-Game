@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://dab77yc5xfdox"]
+
+[node name="Asteriod" type="Area2D"]

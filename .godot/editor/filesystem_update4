@@ -2,3 +2,8 @@ res://main.tscn
 res://git-log.txt
 res://Scripts/player.gd
 res://player.tscn
+res://Scenes/laser.tscn
+res://Scripts/laser.gd
+res://Scenes/main.tscn
+res://Scenes/player.tscn
+res://Scripts/game.gd
