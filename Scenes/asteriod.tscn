@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://rkf8qq57r608"]
+
+[ext_resource type="Script" path="res://Scripts/asteroid.gd" id="1_lhnv3"]
+[ext_resource type="Texture2D" uid="uid://b355id32mgisx" path="res://ASSET/PNG/Meteors/meteorGrey_small2.png" id="2_vw5ga"]
+[ext_resource type="Shape2D" uid="uid://bexy412v4a4mk" path="res://Resources/asteriod_cshape_small.tres" id="3_yljck"]
+
+[node name="Asteriod" type="Area2D"]
+collision_layer = 4
+collision_mask = 11
+script = ExtResource("1_lhnv3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_vw5ga")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = ExtResource("3_yljck")

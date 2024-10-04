@@ -1,11 +1,13 @@
-extends Area2D
+class_name Asteroid extends Area2D
+
+signal exploded(pos, size)
 
 var movement_vecotr := Vector2(0, -1)
 
 enum AsteroidSize{LARGE, MEDIUM, SMALL}
 @export var size := AsteroidSize.LARGE
 
-var speed := 50
+var speed := 200
 
 @onready var sprite = $Sprite2D
 @onready var cshape = $CollisionShape2D
@@ -24,9 +26,24 @@ func _ready():
 			cshape.shape = preload("res://Resources/asteriod_cshape_medium.tres")
 		AsteroidSize.SMALL:
 			speed = randf_range(100,200)
-			sprite.texture = preload("res://ASSET/PNG/Meteors/meteorGrey_tiny1.png")
+			sprite.texture = preload("res://ASSET/PNG/Meteors/meteorGrey_small2.png")
 			cshape.shape = preload("res://Resources/asteriod_cshape_small.tres")
 	
 
 func	 _physics_process(delta: float) -> void:
 	global_position += movement_vecotr.rotated(rotation) * speed * delta
+	
+	var radius = cshape.shape.radius
+	var screen_size = get_viewport_rect().size
+	if (global_position.y + radius) < 0:
+		global_position.y = (screen_size.y + radius)
+	elif global_position.y - radius > screen_size.y:
+		global_position.y = -radius
+	if (global_position.x + radius) < 0:
+		global_position.x = (screen_size.x + radius)
+	elif (global_position.x - radius) > screen_size.x:
+		global_position.x = -radius
+		
+func explode():
+	emit_signal("exploded", global_position, size)
+	queue_free()

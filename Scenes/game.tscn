@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/game.gd" id="1_qibsp"]
 [ext_resource type="PackedScene" uid="uid://brliatwoxijpb" path="res://Scenes/player.tscn" id="2_u55cg"]
-[ext_resource type="PackedScene" uid="uid://dab77yc5xfdox" path="res://Scenes/asteriod.tscn" id="3_3tx1x"]
+[ext_resource type="PackedScene" uid="uid://rkf8qq57r608" path="res://Scenes/asteriod.tscn" id="3_3tx1x"]
 
 [node name="Game" type="Node2D"]
 position = Vector2(-2, 0)
@@ -13,5 +13,20 @@ position = Vector2(640, 360)
 
 [node name="Lasers" type="Node" parent="."]
 
-[node name="Asteriod" parent="." instance=ExtResource("3_3tx1x")]
-position = Vector2(404, 395)
+[node name="Asteroids" type="Node" parent="."]
+
+[node name="Asteriod" parent="Asteroids" instance=ExtResource("3_3tx1x")]
+position = Vector2(308, 463)
+
+[node name="Asteriod2" parent="Asteroids" instance=ExtResource("3_3tx1x")]
+position = Vector2(836, 230)
+
+[node name="Asteriod3" parent="Asteroids" instance=ExtResource("3_3tx1x")]
+position = Vector2(328, 165)
+
+[node name="Asteriod4" parent="Asteroids" instance=ExtResource("3_3tx1x")]
+position = Vector2(930, 544)
+size = 0
+
+[node name="Asteriod5" parent="Asteroids" instance=ExtResource("3_3tx1x")]
+position = Vector2(1047, 110)
