@@ -7,3 +7,5 @@ res://Scripts/laser.gd
 res://Scenes/main.tscn
 res://Scenes/player.tscn
 res://Scripts/game.gd
+res://Scenes/game.tscn
+res://Scripts/asteriod.gd
