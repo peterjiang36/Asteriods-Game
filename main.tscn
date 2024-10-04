@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8rwqdvhptjpv"]
+
+[ext_resource type="PackedScene" uid="uid://brliatwoxijpb" path="res://Asteriods-Game/player.tscn" id="1_scgal"]
+
+[node name="Main" type="Node2D"]
+position = Vector2(-2, 0)
+
+[node name="Player" parent="." instance=ExtResource("1_scgal")]
+position = Vector2(640, 360)
