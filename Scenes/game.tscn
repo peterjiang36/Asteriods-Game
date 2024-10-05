@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://benjwceoflugg"]
+[gd_scene load_steps=9 format=3 uid="uid://benjwceoflugg"]
 
 [ext_resource type="Script" path="res://Scripts/game.gd" id="1_qibsp"]
 [ext_resource type="PackedScene" uid="uid://c0aoa2dtbaa4o" path="res://Scenes/hud.tscn" id="2_kdv58"]
@@ -7,6 +7,7 @@
 [ext_resource type="AudioStream" uid="uid://dr8kyoa243ju6" path="res://ASSET/Sound/508854__smoker858__laser_gun_sound.mp3" id="5_upgs5"]
 [ext_resource type="AudioStream" uid="uid://cpvla8setlkro" path="res://ASSET/Sound/322496__liamg_sfx__explosion-13b.wav" id="6_l1h2d"]
 [ext_resource type="AudioStream" uid="uid://tualhg7gqeil" path="res://ASSET/Sound/364929__jofae__game-die.mp3" id="7_bglwh"]
+[ext_resource type="Texture2D" uid="uid://sf47xij2pry1" path="res://ASSET/Backgrounds/pexels-francesco-ungaro-998641.jpg" id="8_pv27q"]
 
 [node name="Game" type="Node2D"]
 position = Vector2(-2, 0)
@@ -52,3 +53,9 @@ volume_db = -6.438
 [node name="PlayerDieSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_bglwh")
 volume_db = -3.279
+
+[node name="Pexels-francesco-ungaro-998641" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(559.5, 333)
+scale = Vector2(0.339167, 0.3185)
+texture = ExtResource("8_pv27q")
