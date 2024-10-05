@@ -3,23 +3,42 @@ extends Node2D
 @onready var lasers = $Lasers
 @onready var player = $Player
 @onready var asteriods = $Asteroids
+@onready var hud = $UI/HUD
+@onready var player_spawn_pos = $PlayerSpawnPos
 
 var asteroid_scene = preload("res://Scenes/asteriod.tscn")
 
+var score := 0:
+	set(value):
+		score = value
+		hud.score = score
+
+var lives = 3:
+	set(value):
+		lives = value
+		hud.init_lives(lives)
+
 func _ready() -> void:
+	score = 0
+	lives = 3
 	player.connect("laser_shot", _on_player_laser_shot)	
+	player.connect("died", _on_player_died)
 	
 	for asteriod in asteriods.get_children():
 		asteriod.connect("exploded", _on_asteroid_exploded)
+	
 	
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("reset"):
 		get_tree().reload_current_scene()
 	
 func _on_player_laser_shot(laser):
+	$LaserSound.play()
 	lasers.add_child(laser)
 
-func _on_asteroid_exploded(pos, size):
+func _on_asteroid_exploded(pos, size, points):
+	$AsteroidHitSound.play()
+	score += points
 	for i in range(2):
 			match size:
 				Asteroid.AsteroidSize.LARGE:
@@ -36,4 +55,14 @@ func spawn_asteroid(pos, size):
 	a.connect("exploded", _on_asteroid_exploded)
 	asteriods.add_child(a)
 	asteriods.call_deferred("add_child", a)
+	
+func _on_player_died():
+	$PlayerDieSound.play()
+	lives -= 1
+	print(lives)
+	if lives <= 0:
+		get_tree().reload_current_scene()
+	else:
+		await get_tree().create_timer(1).timeout
+		player.respawn(player_spawn_pos.global_position)
 	

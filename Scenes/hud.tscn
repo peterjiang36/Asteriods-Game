@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=3 uid="uid://c0aoa2dtbaa4o"]
+
+[ext_resource type="Script" path="res://Scripts/hud.gd" id="1_1j7ln"]
+[ext_resource type="FontFile" uid="uid://nyuwykvaid2x" path="res://ASSET/Bonus/kenvector_future_thin.ttf" id="2_ac68l"]
+[ext_resource type="PackedScene" uid="uid://bmjwecayeixle" path="res://Scenes/ui_life.tscn" id="3_54km7"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_3iwps"]
+font = ExtResource("2_ac68l")
+font_size = 53
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_1j7ln")
+
+[node name="Score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 6.0
+offset_right = 348.0
+offset_bottom = 73.0
+text = "SCORE: 9999"
+label_settings = SubResource("LabelSettings_3iwps")
+
+[node name="Lives" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 74.0
+offset_right = 197.0
+offset_bottom = 100.0
+scale = Vector2(2, 2)
+
+[node name="UILife" parent="Lives" instance=ExtResource("3_54km7")]
+layout_mode = 2
+
+[node name="UILife2" parent="Lives" instance=ExtResource("3_54km7")]
+layout_mode = 2
+
+[node name="UILife3" parent="Lives" instance=ExtResource("3_54km7")]
+layout_mode = 2
+
+[node name="UILife4" parent="Lives" instance=ExtResource("3_54km7")]
+layout_mode = 2
+
+[node name="UILife5" parent="Lives" instance=ExtResource("3_54km7")]
+layout_mode = 2

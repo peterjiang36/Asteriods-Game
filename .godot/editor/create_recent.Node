@@ -1,6 +1,14 @@
-Node
+AudioStreamPlayer
 CollisionShape2D
-Sprite2D
 Area2D
+AnimatedSprite2D
+HBoxContainer
+TextureRect
 Node2D
+Label
+Control
+CanvasLayer
+Camera2D
+Node
+Sprite2D
 VisibleOnScreenNotifier2D

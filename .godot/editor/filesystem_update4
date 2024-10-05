@@ -12,3 +12,8 @@ res://Scripts/asteriod.gd
 res://Scenes/asteriod.tscn
 res://Scripts/asteroid.gd
 res://Resources/asteriod_cshape_small.tres
+res://Scenes/hud.tscn
+res://Scripts/hud.gd
+res://Scenes/ui_life.tscn
+res://Scenes/player_spawn_area.tscn
+res://Scripts/player_spawn_area.gd

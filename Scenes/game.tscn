@@ -1,12 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://benjwceoflugg"]
+[gd_scene load_steps=8 format=3 uid="uid://benjwceoflugg"]
 
 [ext_resource type="Script" path="res://Scripts/game.gd" id="1_qibsp"]
+[ext_resource type="PackedScene" uid="uid://c0aoa2dtbaa4o" path="res://Scenes/hud.tscn" id="2_kdv58"]
 [ext_resource type="PackedScene" uid="uid://brliatwoxijpb" path="res://Scenes/player.tscn" id="2_u55cg"]
 [ext_resource type="PackedScene" uid="uid://rkf8qq57r608" path="res://Scenes/asteriod.tscn" id="3_3tx1x"]
+[ext_resource type="AudioStream" uid="uid://dr8kyoa243ju6" path="res://ASSET/Sound/508854__smoker858__laser_gun_sound.mp3" id="5_upgs5"]
+[ext_resource type="AudioStream" uid="uid://cpvla8setlkro" path="res://ASSET/Sound/322496__liamg_sfx__explosion-13b.wav" id="6_l1h2d"]
+[ext_resource type="AudioStream" uid="uid://tualhg7gqeil" path="res://ASSET/Sound/364929__jofae__game-die.mp3" id="7_bglwh"]
 
 [node name="Game" type="Node2D"]
 position = Vector2(-2, 0)
 script = ExtResource("1_qibsp")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="HUD" parent="UI" instance=ExtResource("2_kdv58")]
 
 [node name="Player" parent="." instance=ExtResource("2_u55cg")]
 position = Vector2(640, 360)
@@ -26,7 +34,21 @@ position = Vector2(328, 165)
 
 [node name="Asteriod4" parent="Asteroids" instance=ExtResource("3_3tx1x")]
 position = Vector2(930, 544)
-size = 0
 
 [node name="Asteriod5" parent="Asteroids" instance=ExtResource("3_3tx1x")]
 position = Vector2(1047, 110)
+
+[node name="PlayerSpawnPos" type="Node2D" parent="."]
+position = Vector2(640, 360)
+
+[node name="LaserSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_upgs5")
+volume_db = -10.775
+
+[node name="AsteroidHitSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_l1h2d")
+volume_db = -6.438
+
+[node name="PlayerDieSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_bglwh")
+volume_db = -3.279
