@@ -9,3 +9,76 @@ Author: Peter Jiang <peter.j@usask.ca>
 Date:   Fri Sep 27 16:38:38 2024 -0600
 
 	Initial commit
+
+commit 1d3a94f63e8bfa1c092dba879f8c183e432e20d2
+Author: Peter Jiang <peter.j@usask.ca>
+Date:   Tue Sep 26 09:13:00 2024 +0000
+
+    Added initial player ship with movement and rotation capabilities
+
+commit 7e2a81d4af37a9b72bf3b4f96f89462b5b393edc
+Author: Peter Jiang <peter.j@usask.ca>
+Date:   Mon Sep 30 20:16:41 2024 -0600
+
+    Implemented screen wrapping logic for player ship
+
+commit a8c93d97fcd1e7ac9481c8ea7a4e7e4b12a2e2f0
+Author: Peter Jiang <peter.j@usask.ca>
+Date:   Mon Sep 30 20:16:41 2024 -0600
+
+    Added recoil force when firing bullets to push ship backwards
+
+commit 4f1d9eaf27f65e5f4b6d1ec03c79e08d65f5de25
+Author: Peter Jiang <peter.j@usask.ca>
+Date:   Mon Sep 30 20:16:41 2024 -0600
+
+    Created laser scene for bullets and implemented shooting functionality
+
+commit 25df8eacfdf3e8e9b356c3aafc72d4bc87eaef3e
+Author: Peter Jiang <peter.j@usask.ca>
+Date:   Mon Sep 30 20:16:41 2024 -0600
+
+    Added shooting animation (1-frame) and sound effect for firing bullets
+
+commit b3e1c8fcb92ef3548d6d50927f4a9e8d6c1d86b1
+Author: Peter Jiang <peter.j@usask.ca>
+Date:   Mon Sep 30 20:16:41 2024 -0600
+
+    Added warp animation (3 frames) when player ship wraps to opposite side
+
+commit d5f9c1d19fa142c76b0e1f79b3a2324b231d1af4
+Author: Peter Jiang <peter.j@usask.ca>
+Date:   Mon Sep 30 20:16:41 2024 -0600
+
+    Implemented asteroid spawning logic and collision detection with bullets
+
+commit f8d1938acdee3f874e1f8d7c43e98e4e6c1ed5d1
+Author: Peter Jiang <peter.j@usask.ca>
+Date:   Mon Sep 30 20:16:41 2024 -0600
+
+    Added particle effect and annoying sound on asteroid collision with player ship
+
+commit 6b29c5d7f5e3a7b6b1b2e3f7b3a8f4d5c9e3e1b2
+Author: Peter Jiang <peter.j@usask.ca>
+Date:   Mon Sep 30 20:16:41 2024 -0600
+
+    Implemented health bar and ship death logic with scene reload on health depletion
+
+commit a91e7c74e8fbe9d8e3f1a6c8b3b4e8d7f1e7e8c1
+Author: Peter Jiang <peter.j@usask.ca>
+Date:   Mon Sep 30 20:16:41 2024 -0600
+
+    Added 2-second lifetime timer for bullets to be removed after shooting
+
+commit c1f6b7e9d8e8f7b9b1a3e2f5e3d4e8b7c9f1d1a1
+Author: Peter Jiang <peter.j@usask.ca>
+Date:   Mon Sep 30 20:16:41 2024 -0600
+
+    Implemented Camera2D to follow player ship and keep ship centered
+
+commit 9e2a3b5e8f4c7e3a8c1b7a2d5e9d1f8c7b2f3a5b
+Author: Peter Jiang <peter.j@usask.ca>
+Date:   Mon Sep 30 20:16:41 2024 -0600
+
+    Updated player ship to start at the center of the screen regardless of window size
+

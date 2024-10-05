@@ -1,6 +1,7 @@
+CanvasLayer
+AnimatableBody2D
 Camera2D
 AnimatedSprite2D
-CanvasLayer
 GPUParticles2D
 AudioStreamPlayer
 CollisionShape2D
@@ -11,4 +12,3 @@ Node2D
 Label
 Control
 Node
-Sprite2D

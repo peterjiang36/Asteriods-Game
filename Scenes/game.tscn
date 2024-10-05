@@ -39,6 +39,15 @@ position = Vector2(930, 544)
 [node name="Asteriod5" parent="Asteroids" instance=ExtResource("3_3tx1x")]
 position = Vector2(1047, 110)
 
+[node name="Asteriod6" parent="Asteroids" instance=ExtResource("3_3tx1x")]
+position = Vector2(133, 343)
+
+[node name="Asteriod7" parent="Asteroids" instance=ExtResource("3_3tx1x")]
+position = Vector2(1129, 307)
+
+[node name="Asteriod8" parent="Asteroids" instance=ExtResource("3_3tx1x")]
+position = Vector2(596, 580)
+
 [node name="PlayerSpawnPos" type="Node2D" parent="."]
 position = Vector2(640, 360)
 
@@ -56,6 +65,5 @@ volume_db = -3.279
 
 [node name="Pexels-francesco-ungaro-998641" type="Sprite2D" parent="."]
 show_behind_parent = true
-position = Vector2(559.5, 333)
-scale = Vector2(0.339167, 0.3185)
+position = Vector2(638, 360)
 texture = ExtResource("8_pv27q")
