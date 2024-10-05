@@ -1,6 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1728102887
-git-log.txt::TextFile::-1::1728102858::0::1::::<><>::
+::res://::1728104820
+gitlog.txt::TextFile::-1::1728104205::0::1::::<><>::
 icon.svg::CompressedTexture2D::7102090802578448926::1727475556::1728073557::1::::<><>::
 ::res://ASSET/::1728095003
 license.txt::TextFile::-1::1727752298::0::1::::<><>::
@@ -338,13 +338,13 @@ sheet.svg::CompressedTexture2D::7021490060604664766::1727752298::1728073557::1::
 asteriod_cshape_large.tres::CircleShape2D::7256735367718299279::1728079525::0::1::::<><>::
 asteriod_cshape_medium.tres::CircleShape2D::4415123740082159879::1728079635::0::1::::<><>::
 asteriod_cshape_small.tres::CircleShape2D::2716167150747997126::1728082191::0::1::::<><>::
-::res://Scenes/::1728102479
+::res://Scenes/::1728104689
 asteriod.tscn::PackedScene::1214217502046845495::1728098553::0::1::::<><>::res://Scripts/asteroid.gd<>uid://b355id32mgisx::::res://ASSET/PNG/Meteors/meteorGrey_small2.png<>uid://bexy412v4a4mk::::res://Resources/asteriod_cshape_small.tres
 asteroid.tscn::PackedScene::-1::1728079865::0::1::::<><>::
-game.tscn::PackedScene::2694598821317964810::1728102479::0::1::::<><>::res://Scripts/game.gd<>uid://c0aoa2dtbaa4o::::res://Scenes/hud.tscn<>uid://brliatwoxijpb::::res://Scenes/player.tscn<>uid://rkf8qq57r608::::res://Scenes/asteriod.tscn<>uid://dr8kyoa243ju6::::res://ASSET/Sound/508854__smoker858__laser_gun_sound.mp3<>uid://cpvla8setlkro::::res://ASSET/Sound/322496__liamg_sfx__explosion-13b.wav<>uid://tualhg7gqeil::::res://ASSET/Sound/364929__jofae__game-die.mp3<>uid://sf47xij2pry1::::res://ASSET/Backgrounds/pexels-francesco-ungaro-998641.jpg
+game.tscn::PackedScene::2694598821317964810::1728104689::0::1::::<><>::res://Scripts/game.gd<>uid://c0aoa2dtbaa4o::::res://Scenes/hud.tscn<>uid://brliatwoxijpb::::res://Scenes/player.tscn<>uid://rkf8qq57r608::::res://Scenes/asteriod.tscn<>uid://dr8kyoa243ju6::::res://ASSET/Sound/508854__smoker858__laser_gun_sound.mp3<>uid://cpvla8setlkro::::res://ASSET/Sound/322496__liamg_sfx__explosion-13b.wav<>uid://tualhg7gqeil::::res://ASSET/Sound/364929__jofae__game-die.mp3<>uid://sf47xij2pry1::::res://ASSET/Backgrounds/pexels-francesco-ungaro-998641.jpg
 hud.tscn::PackedScene::6528413919865219736::1728098553::0::1::::<><>::res://Scripts/hud.gd<>uid://nyuwykvaid2x::::res://ASSET/Bonus/kenvector_future_thin.ttf<>uid://bmjwecayeixle::::res://Scenes/ui_life.tscn
 laser.tscn::PackedScene::4982972068181461690::1728098553::0::1::::<><>::res://Scripts/laser.gd<>uid://cg5prw5swyax0::::res://ASSET/PNG/Lasers/laserBlue01.png
-player.tscn::PackedScene::3602825949372947731::1728102464::0::1::::<><>::uid://datyxahb75cfq::::res://ASSET/PNG/playerShip1_blue.png<>res://Scripts/player.gd
+player.tscn::PackedScene::3602825949372947731::1728104689::0::1::::<><>::uid://datyxahb75cfq::::res://ASSET/PNG/playerShip1_blue.png<>res://Scripts/player.gd
 ui_life.tscn::PackedScene::3248609230295346646::1728098553::0::1::::<><>::uid://bxx1mi8jq0sdq::::res://ASSET/PNG/UI/playerLife1_blue.png
 ::res://Scripts/::1728100280
 asteroid.gd::GDScript::-1::1728086935::0::1::::Asteroid<>Area2D<>::
