@@ -1,3 +1,4 @@
+Label
 CanvasLayer
 AnimatableBody2D
 Camera2D
@@ -9,6 +10,5 @@ Area2D
 HBoxContainer
 TextureRect
 Node2D
-Label
 Control
 Node
